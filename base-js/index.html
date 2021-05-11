@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Classic Board Games Quiz</title>
+    <meta
+      name="description"
+      content="Are you a board game boss? Get ready to roll the dice and prove your prowess with this fun quiz on classic board games!"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+  </head>
+  <body onload="initialize()">
+    <div id="loading" class="loading-wrapper">
+      <div class="inner">
+        <img class="logo" src="./logo.svg" alt="Logo" />
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 id="page-title"></h1>
+      <p id="page-description"></p>
+
+      <form id="form">
+        <div class="nav">
+          <span id="message"></span>
+          <button class="btn" id="submit-btn" type="submit" onclick="return false">Continue</button>
+        </div>
+      </form>
+
+      <div id="final-result">
+        <img alt="Result image" class="r-image" />
+
+        <div class="right-col">
+          <h2 class="r-title"></h2>
+          <p class="r-message"></p>
+          <span class="r-score"></span>
+          <button id="reset" class="btn" onclick="return false">Retry the quiz!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
